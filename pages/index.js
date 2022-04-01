@@ -18,9 +18,9 @@ export default function Home({ posts }) {
 
       <pre>{/*JSON.stringify(posts, null, 2)*/}</pre>
       <Row className="mb-5">
-        {posts.map((post) => (
-          <Col md="4">
-            <GridItem post={post} />
+        {posts.map((post, index) => (
+          <Col md="4" key={index}>
+            <GridItem post={post} key={index} />
           </Col>
         ))}
       </Row>

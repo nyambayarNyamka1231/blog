@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import MyNavbar from "components/my-navbar";
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <Container>
       <MyNavbar />
@@ -21,3 +21,5 @@ export default ({ children }) => {
     </Container>
   );
 };
+
+export default Layout;

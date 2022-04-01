@@ -1,7 +1,7 @@
 import moment from "moment";
 import { urlFor } from "lib/api";
 
-export default ({ post }) => {
+const PostHeader = ({ post }) => {
   moment.locale("mn");
   return (
     <div className="blog-detail-header">
@@ -32,3 +32,5 @@ export default ({ post }) => {
     </div>
   );
 };
+
+export default PostHeader;

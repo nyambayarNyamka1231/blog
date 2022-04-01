@@ -1,7 +1,7 @@
 import hljs from "highlight.js";
 import { createRef, useEffect } from "react";
 
-export default ({ children, language }) => {
+const HighlightCore = ({ children, language }) => {
   const codeRef = createRef();
 
   useEffect(() => {
@@ -14,3 +14,5 @@ export default ({ children, language }) => {
     </pre>
   );
 };
+
+export default HighlightCore;
